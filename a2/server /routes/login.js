@@ -1,4 +1,5 @@
 module.exports = function(db, app) {
+  //LOGIN route when user login it will show the user in consile
   app.post('/api/auth', function(req, res) {
     // console.log(req.body)
     if (!req.body) {

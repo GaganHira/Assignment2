@@ -1,4 +1,5 @@
 module.exports = function(db, app, ObjectID) {
+  // This route will delete  the member in a group 
   app.post('/deleteMember', function(req, res) {
     console.log(req.body)
     if (!req.body) {
