@@ -1,5 +1,5 @@
 module.exports = function(db, app) {
-  //Route to manage adding a product
+  //Route to manage adding a product it will check if user is valid 
 
   app.post('/api/checkvalidid', function(req, res) {
     if (!req.body) {
