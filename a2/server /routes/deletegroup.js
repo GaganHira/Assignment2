@@ -1,5 +1,7 @@
-module.exports = function(db, app, ObjectID) {
-  app.post('/api/deletegroup', function(req, res) {
+module.exports = function (db, app, ObjectID) {
+
+  // Delete group route
+  app.post('/api/deletegroup', function (req, res) {
     if (!req.body) {
       return res.sendStatus(400)
     }
