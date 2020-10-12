@@ -1,5 +1,5 @@
 module.exports = function(db, app, ObjectID) {
-  app.post('/api/addChannelMember', function(req, res) {
+  app.post('/api/addChannelMember', function(req, res) { // post methof to add a channnel 
     if (!req.body) {
       return res.sendStatus(400)
     }
