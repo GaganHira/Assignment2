@@ -2,37 +2,15 @@
   <div id="formContent">
     <form>
       <div class="form-group">
-        <input
-          type="text"
-          [(ngModel)]="name"
-          id="name"
-          class="fadeIn second"
-          name="name"
-          placeholder="Name"
-          class="form-control"
-          required
-        />
+        <input type="text" [(ngModel)]="username" id="username"  class="fadeIn second"    name="username" placeholder="Name"  class="form-control"  required />
       </div>
       <div class="form-group">
         <input
-          type="password"
-          [(ngModel)]="password"
-          id="password"
-          class="fadeIn third"
-          name="password"
-          placeholder="Password"
-          class="form-control"
-          required
-        />
+          type="password" [(ngModel)]="password" id="password" class="fadeIn third"  name="password"  placeholder="Password" class="form-control"  required />
       </div>
       <div class="form-group">
         <input
-          type="submit"
-          (click)="LoggedIn()"
-          class="fadeIn fourth"
-          value="Log In"
-          class="btn btn-primary"
-        />
+          type="submit" (click)="LoggedIn()" class="fadeIn fourth" value="Log In" class="btn btn-primary" />
       </div>
     </form>
     <div id="formFooter"></div>

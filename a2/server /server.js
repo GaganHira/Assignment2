@@ -15,14 +15,16 @@ const PORT = 3000
 server.listen(http, PORT)
 
 app.use(cors())
-app.use(express.static(path.join(__dirname, '../dist/ChatroomAssignment/')))
+app.use(express.static(path.join(__dirname, '/../dist/a2/')))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const url = 'mongodb://localhost:27017'
 MongoClient.connect(
   url,
+  
   { poolSize: 10, useNewUrlParser: true, useUnifiedTopology: true },
+  
   function(err, client) {
     //Callback function code. When we have a connection start the rest of the app.
     if (err) {

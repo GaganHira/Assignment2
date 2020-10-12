@@ -13,7 +13,7 @@ import { Users } from 'src/users'
 export class LoginComponent implements OnInit {
   objectId: string = ''
   id = null
-  name = ''
+  username = ''
   password = ''
   age: null
   birthday: null
@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
     this.newUser = new Users(
       '',
       this.id,
-      this.name,
+      this.username,
       this.password,
       this.age,
       this.birthday,
