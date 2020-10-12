@@ -1,4 +1,4 @@
-var express = require('express')
+var express = require('express') // Method require express, cors, http,fs, sockets and mongo db connection
 var app = express()
 var path = require('path')
 var http = require('http').Server(app)

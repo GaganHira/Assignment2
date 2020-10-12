@@ -1,7 +1,7 @@
 var assert = require('assert')
 var app = require('../server.js')
 var request = require('supertest')
-var http = require('http')
+var http = require('http') // Testng using Chai 
 let chai = require('chai')
 let chaiHttp = require('chai-http')
 let should = chai.should()
