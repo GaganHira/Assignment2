@@ -1,4 +1,5 @@
 module.exports = function(db, app) {
+  //Route to create a group 
   app.post('/createGroup', function(req, res) {
     if (!req.body) {
       return res.sendStatus(400)
