@@ -1,4 +1,6 @@
 module.exports = function(db, app) {
+
+  //Adding new Member
   app.post('/addmember', function(req, res) {
     if (!req.body) {
       return res.sendStatus(400)
